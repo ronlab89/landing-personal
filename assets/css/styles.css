@@ -1,0 +1,88 @@
+:root {
+    --bg-header:       #292929;
+    --logo-primary:    rgba(0, 85, 212, 1);
+    --logo-secondary:  rgba(0, 51, 128, 1);
+    --text-gray-light: #6C757D;
+    --text-gray-dark:  #212529;
+    --black:           #000000;
+    --oxford-blue:     #14213D;
+    --orange-web:      #FCA311;
+    --platinum:        #E5E5E5;
+    --white:           #ffffff;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Respondent';
+    src: url('../fonts/respondent/RespondentLight_PERSONAL_USE_ONLY.otf');
+}
+@font-face {
+    font-family: 'Cubest';
+    src: url('../fonts/cubest/Cubest-Medium.otf');
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand/Quicksand-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Light.ttf');
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black) !important;
+}
+.wrap {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/background_header.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+header {
+    width: 100%;
+    min-height: 200px
+}
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.card {
+    width: 40%;
+    min-height: auto;
+    margin: 0px auto;
+    background-color: rgba(0,0,0,1) !important;
+    border-radius: 25px !important;
+    box-shadow: 2px 2px 6px 5px rgba(255,255,255,0.5);
+}
+.card-title {
+    font-family: 'Cubest';
+    color: var(--orange-web);
+}
+.card-text {
+    font-family: 'Raleway';
+    color: var(--white);
+    font-weight: 700;
+}
+.links {
+    font-family: 'Cubest';
+    font-size: 25px;
+}
+.gmail, .whatsapp{
+    width: 50px;
+}
