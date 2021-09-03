@@ -171,4 +171,35 @@ header {
 .modal-header {
     background-color: var(--orange-web);
     color: var(--oxford-blue);
+    font-weight: bold;    
+}
+.modal-body {
+    background-color: var(--platinum);
+    color: var(--oxford-blue);
+    font-weight: bold;
+}
+.btn-outline-primary {
+    color: var(--orange-web) !important;
+    border-color: var(--orange-web) !important;
+}
+.btn-outline-primary:hover {
+    color: var(--white) !important;
+    background-color: var(--orange-web) !important;
+    border-color: var(--orange-web) !important;
+}
+.form-control:focus {
+    color: var(--oxford-blue) !important;
+    background-color: #fff !important;
+    border-color: var(--oxford-blue) !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 0.1rem var(--oxford-blue) !important;
+}
+.form-check-input:checked {
+    background-color: var(--oxford-blue) !important;
+    border-color: var(--oxford-blue) !important;
+}
+.form-check-input:focus {
+    border-color: none !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 0.1rem var(--oxford-blue) !important;
 }

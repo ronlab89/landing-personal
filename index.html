@@ -11,7 +11,6 @@
 </head>
 <body>
     <div class="container-fluid wrap">
-
         <header class="d-flex flex-row justify-content-center align-items-center">
             <div class="img col-6 text-start ms-5 ps-5">
                 <img src="./assets/images/20201231_212244.jpg" alt="Foto Personal" class="img-thumbnail border border-3 border-primary" width="75" height="75">
@@ -33,7 +32,7 @@
                 <div class="card-link links text-center py-5">
                     <ul class="navbar-nav">
                         <li class="nav-item py-3">
-                            <a href="#" class="link">Github
+                            <a href="https://github.com/ronlab89" target="_blank" class="link">Github
                                 <span class="border-general border-top1"></span>
                                 <span class="border-general border-right1"></span>
                                 <span class="border-general border-bottom1"></span>
@@ -41,7 +40,7 @@
                             </a>
                         </li>
                         <li class="nav-item py-3">  
-                            <a href="#" class="link">Linkedin
+                            <a href="https://www.linkedin.com/in/ronlab89/" target="_blank" class="link">Linkedin
                                 <span class="border-general border-top1"></span>
                                 <span class="border-general border-right1"></span>
                                 <span class="border-general border-bottom1"></span>
@@ -49,12 +48,28 @@
                             </a>
                         </li>
                         <li class="nav-item py-3">
-                            <a href="#" class="link">Web
+                            <a href="#" class="link" id="liveAlertBtn" data-bs-toggle="modal" data-bs-target="#alertModal">Web
                                 <span class="border-general border-top1"></span>
                                 <span class="border-general border-right1"></span>
                                 <span class="border-general border-bottom1"></span>
                                 <span class="border-general border-left1"></span>
                             </a>
+                            <div class="modal" tabindex="-1" id="alertModal" aria-labelledby="alertModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="alert alert-danger alert-dismissible" role="alert" id="liveAlert">
+                                            <strong>El Sitio Web se encuentra en construccion!</strong>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
                         </li>
                     </ul>
                 </div>
