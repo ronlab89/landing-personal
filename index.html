@@ -20,17 +20,10 @@
             </div>
         </header>
     <section>
-        <div class=" p-5">
-            <div class="card-title text-center">
+        <div class="p-5 text-center">
                 <h1 class="name">Ronald Labrador</h1>
-            </div>
-            <div class="card-body">
-                
-                <div class="card-text info text-center">
-                    <p class="lead bio">Soy Ingeniero de Sistemas, diseñador y desarrollador Web Front End.</p>
-                </div>
-                <div class="card-link links text-center py-5">
-                    <ul class="navbar-nav">
+                <p class="lead bio">Soy Ingeniero de Sistemas, diseñador y desarrollador Web Front End.</p>
+                    <ul class="navbar-nav links">
                         <li class="nav-item py-3">
                             <a href="https://github.com/ronlab89" target="_blank" class="link">Github
                                 <span class="border-general border-top1"></span>
@@ -72,8 +65,6 @@
                                 </div>
                         </li>
                     </ul>
-                </div>
-            </div>
         </div>
     </section>
     <footer class="row p-2">
@@ -93,41 +84,41 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form class="row g-3 needs-validation" novalidate>
+                        <form action="/" method="POST" id="form" class="row g-3 needs-validation" novalidate>
                             <div class="col-md-6">
-                                <label for="validationCustom01" class="form-label">Primer nombre</label>
-                                <input type="text" class="form-control" id="validationCustom01" required>
+                                <label for="name" class="form-label">Primer nombre</label>
+                                <input type="text" name="name" class="form-control" id="name" required>
                                 <div class="valid-feedback">
                                     Se ve bien!
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <label for="validationCustom02" class="form-label">Apellido</label>
-                                <input type="text" class="form-control" id="validationCustom02" required>
+                                <label for="lastName" class="form-label">Apellido</label>
+                                <input type="text" name="lastName" class="form-control" id="lastName" required>
                                 <div class="valid-feedback">
                                     Se ve bien!
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <label for="validationCustomUsername" class="form-label">Email</label>
+                                <label for="email" class="form-label">Email</label>
                                 <div class="input-group has-validation">
-                                    <input type="email" class="form-control" id="validationCustomUsername" required>
+                                    <input type="email" name="email" class="form-control" id="email" required>
                                     <div class="invalid-feedback">
                                         Por favor ingresa un email valido.
                                     </div>
                                 </div>
                             </div>
                             <div class="mb-3 col-md-12">
-                                <label for="validationTextarea" class="form-label">Dime en que puedo ayudarte</label>
-                                <textarea class="form-control" id="validationTextarea" placeholder="" required></textarea>
+                                <label for="message" class="form-label">Dime en que puedo ayudarte</label>
+                                <textarea class="form-control" name="message" id="message" placeholder="" required></textarea>
                                 <div class="invalid-feedback">
                                     Por favor escribe sobre que necesitas ayuda?
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                    <label class="form-check-label" for="invalidCheck">
+                                    <input class="form-check-input" name="accept" type="checkbox" value="" id="accept" required>
+                                    <label class="form-check-label" for="accept">
                                         Aceptas los terminos y condiciones?
                                     </label>
                                     <div class="invalid-feedback">
