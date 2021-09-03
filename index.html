@@ -14,7 +14,7 @@
 
         <header class="d-flex flex-row justify-content-center align-items-center">
             <div class="img col-6 text-start ms-5 ps-5">
-                <img src="./assets/images/20201231_212244.jpg" alt="Foto Personal" class="">
+                <img src="./assets/images/20201231_212244.jpg" alt="Foto Personal" class="img-thumbnail border border-3 border-primary" width="75" height="75">
             </div>
             <div class="logo col-6 text-end me-5 pe-5">
                 <img src="./assets/images/logo.png" alt="Logo Personal" class="img-fluid" width="100px">
@@ -33,16 +33,28 @@
                 <div class="card-link links text-center py-5">
                     <ul class="navbar-nav">
                         <li class="nav-item py-3">
-                            
-                            <a href="#" class="nav-link">Github</a>
+                            <a href="#" class="link">Github
+                                <span class="border-general border-top1"></span>
+                                <span class="border-general border-right1"></span>
+                                <span class="border-general border-bottom1"></span>
+                                <span class="border-general border-left1"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item py-3">  
+                            <a href="#" class="link">Linkedin
+                                <span class="border-general border-top1"></span>
+                                <span class="border-general border-right1"></span>
+                                <span class="border-general border-bottom1"></span>
+                                <span class="border-general border-left1"></span>
+                            </a>
                         </li>
                         <li class="nav-item py-3">
-                            
-                            <a href="#" class="nav-link">Linkedin</a>
-                        </li>
-                        <li class="nav-item py-3">
-                            
-                            <a href="#" class="nav-link">Web</a>
+                            <a href="#" class="link">Web
+                                <span class="border-general border-top1"></span>
+                                <span class="border-general border-right1"></span>
+                                <span class="border-general border-bottom1"></span>
+                                <span class="border-general border-left1"></span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -50,17 +62,83 @@
         </div>
     </section>
     <footer class="row p-2">
+        <!-- Gmail -->
         <div class="email col-6 text-center">
-            <a href="#" target="_blank">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img src="./assets/images/gmail.svg" alt="Email" class="gmail">
-            </a>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Contacta conmigo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-6">
+                                <label for="validationCustom01" class="form-label">Primer nombre</label>
+                                <input type="text" class="form-control" id="validationCustom01" required>
+                                <div class="valid-feedback">
+                                    Se ve bien!
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom02" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="validationCustom02" required>
+                                <div class="valid-feedback">
+                                    Se ve bien!
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="validationCustomUsername" class="form-label">Email</label>
+                                <div class="input-group has-validation">
+                                    <input type="email" class="form-control" id="validationCustomUsername" required>
+                                    <div class="invalid-feedback">
+                                        Por favor ingresa un email valido.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3 col-md-12">
+                                <label for="validationTextarea" class="form-label">Dime en que puedo ayudarte</label>
+                                <textarea class="form-control" id="validationTextarea" placeholder="" required></textarea>
+                                <div class="invalid-feedback">
+                                    Por favor escribe sobre que necesitas ayuda?
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        Aceptas los terminos y condiciones?
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        Debes aceptar los terminos antes de enviar.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-outline-primary" type="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
+            </div>
+        </div>
+        <!-- Whatsapp -->
         <div class="whatsapp col-6 text-center">
-            <a href="#" target="_blank">
+            <a href="https://wa.me/1XXXXXXXXXX" target="_blank">
                 <img src="./assets/images/whatsapp.svg" alt="Whatsapp" class="whatsapp">
             </a>
         </div>
     </footer>
+
+
+    
 </div>
     
     <!-- Scripts -->

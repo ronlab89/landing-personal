@@ -9,6 +9,10 @@
     --orange-web:      #FCA311;
     --platinum:        #E5E5E5;
     --white:           #ffffff;
+
+    /* Transitions */
+    --transition-duration: 0.3s;
+    --transition-delay: 0.2s;
 }
 
 /* Fonts */
@@ -57,11 +61,7 @@ header {
     width: 100%;
     min-height: 200px
 }
-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
+
 .card {
     width: 40%;
     min-height: auto;
@@ -85,4 +85,90 @@ img {
 }
 .gmail, .whatsapp{
     width: 50px;
+}
+.btn:focus {
+    box-shadow: none !important;
+}
+
+/* border animation Links */
+.link{
+    width: 190px;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+.link:hover {
+    color: var(--white);
+}
+
+.link .border-general{
+    position: absolute;
+    left: 0;
+    background: var(--orange-web);
+    transition: transform var(--transition-duration) ease-in-out;
+}
+
+.link .border-top1,
+.link .border-bottom1 {
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+}
+
+.link .border-left1,
+.link .border-right1 {
+    width: 1px;
+    height: 100%;
+    transform: scaleY(0);
+}
+
+.link .border-top1,
+.link .border-left1,
+.link .border-right1 {
+    top: 0;
+}
+
+.link .border-bottom1 {
+    bottom: 0;
+    transform-origin: bottom right;
+}
+
+.link .border-top1 {
+    transform-origin: top left;
+}
+
+.link .border-left1 {
+    transform-origin: bottom left;
+}
+
+.link .border-right1 {
+    left: auto;
+    right: 0;
+    transform-origin: top right;
+}
+
+.link:hover .border-top1,
+.link:hover .border-bottom1 {
+    transform: scaleX(1);
+}
+
+.link:hover .border-left1,
+.link:hover .border-right1 {
+    transform: scaleY(1);
+}
+
+.link:hover .border-right1 {
+    transition-delay: var(--transition-delay);
+}
+
+.link:hover .border-bottom1 {
+    transition-delay: calc(var(--transition-delay) * 2);
+}
+
+.link:hover .border-left1 {
+    transition-delay: calc(var(--transition-delay) * 3);
+}
+
+.modal-header {
+    background-color: var(--orange-web);
+    color: var(--oxford-blue);
 }
