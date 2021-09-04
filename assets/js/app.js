@@ -19,32 +19,32 @@
         
         var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
         var alertTrigger = document.getElementById('liveAlertBtn')
- 
-/*        
-function alert(message, type) {
-    var wrapper = document.createElement('div')
-    wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
-    
-    alertPlaceholder.append(wrapper)
-}
 
-if (alertTrigger) {
-    alertTrigger.addEventListener('click', function () {
-        alert('Nice, you triggered this alert message!', 'success')
-    })
-}
-*/
 
 // Formulario
 
 const form = document.querySelector('#form');
 
-form.addEventListener('submit', handleSubmit);
-
-const handleSubmit = (e) => {
+const handleSubmit = async (e) => {
     e.preventDefault();
-    const formEnv = new FormData(this);
-    console.log(formEnv.get('name'));
+    const data = new FormData(form);
+    const status = document.querySelector('#form-status');
+    await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        status.classList.add('alert', 'alert-success');
+        status.innerHTML = "Gracias por contactarte conmigo! Te escribire pronto..";
+        form.reset()
+    }).catch(error => {
+        status.classList.add('alert', 'alert-danger');
+        status.innerHTML = "Oops! Hubo un problema enviando tu mensaje!"
+    });
 }
+
+form.addEventListener('submit', handleSubmit);
 
 })()

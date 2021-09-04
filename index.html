@@ -55,7 +55,7 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="alert alert-danger alert-dismissible" role="alert" id="liveAlert">
-                                            <strong>El Sitio Web se encuentra en construccion!</strong>
+                                            <strong>El Sitio Web se encuentra en construcción!</strong>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
@@ -84,7 +84,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="/" method="POST" id="form" class="row g-3 needs-validation" novalidate>
+                        <!-- Formulario de contacto -->
+                        <form action="https://formspree.io/f/xdoyylpp" method="POST" id="form" class="row g-3 needs-validation" novalidate>
                             <div class="col-md-6">
                                 <label for="name" class="form-label">Primer nombre</label>
                                 <input type="text" name="name" class="form-control" id="name" required>
@@ -129,6 +130,7 @@
                             <div class="col-12">
                                 <button class="btn btn-outline-primary" type="submit">Enviar</button>
                             </div>
+                            <p id="form-status" role="alert"></p>
                         </form>
                     </div>
                 </div>

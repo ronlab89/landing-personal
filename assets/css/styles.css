@@ -195,6 +195,9 @@ header {
     outline: 0 !important;
     box-shadow: 0 0 0 0.1rem var(--oxford-blue) !important;
 }
+#hidden {
+    opacity: 0;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
