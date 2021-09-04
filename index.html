@@ -13,14 +13,14 @@
     <div class="container-fluid wrap">
         <header class="d-flex flex-row justify-content-center align-items-center">
             <div class="img col-6 text-start ms-5 ps-5">
-                <img src="./assets/images/20201231_212244.jpg" alt="Foto Personal" class="img-thumbnail border border-3 border-primary" width="75" height="75">
+                <img src="./assets/images/20201231_212244.jpg" alt="Foto Personal" class="foto img-thumbnail border border-3 border-primary" width="75" height="75">
             </div>
             <div class="logo col-6 text-end me-5 pe-5">
-                <img src="./assets/images/logo.png" alt="Logo Personal" class="img-fluid" width="100px">
+                <img src="./assets/images/logo.png" alt="Logo Personal" class="logo" width="100px">
             </div>
         </header>
     <section>
-        <div class="p-5 text-center">
+        <div class="p-xl-5 pt-xl-5 pt-lg-3 text-center">
                 <h1 class="name">Ronald Labrador</h1>
                 <p class="lead bio">Soy Ingeniero de Sistemas, diseñador y desarrollador Web Front End.</p>
                     <ul class="navbar-nav links">
@@ -48,17 +48,15 @@
                                 <span class="border-general border-left1"></span>
                             </a>
                             <div class="modal" tabindex="-1" id="alertModal" aria-labelledby="alertModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-dialog modal-sm modal-dialog-centered">
                                     <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <div class="alert alert-danger alert-dismissible" role="alert" id="liveAlert">
+                                        <div class="alert alert-danger alert-dismissible sitio" role="alert" id="liveAlert">
                                             <strong>El Sitio Web se encuentra en construcción!</strong>
                                         </div>
-                                    </div>
-                                    <div class="modal-footer">
                                     </div>
                                     </div>
                                 </div>
@@ -67,7 +65,7 @@
                     </ul>
         </div>
     </section>
-    <footer class="row p-2">
+    <footer class="row p-2 justify-content-md-center">
         <!-- Gmail -->
         <div class="email col-6 text-center">
             <!-- Button trigger modal -->
@@ -138,10 +136,12 @@
             </div>
         </div>
         <!-- Whatsapp -->
-        <div class="whatsapp col-6 text-center">
-            <a href="https://wa.me/1XXXXXXXXXX" target="_blank">
-                <img src="./assets/images/whatsapp.svg" alt="Whatsapp" class="whatsapp">
-            </a>
+        <div class="whatsapp col-12 col-md-6 text-center">
+            <div class="whats">
+                <a href="https://wa.me/1XXXXXXXXXX" target="_blank" class="d-block">
+                    <img src="./assets/images/whatsapp.svg" alt="Whatsapp" class="whatsapp">
+                </a>
+            </div>
         </div>
     </footer>
 

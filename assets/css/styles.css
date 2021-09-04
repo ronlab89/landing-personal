@@ -198,8 +198,36 @@ header {
 #hidden {
     opacity: 0;
 }
+.sitio {
+    font-size: 1rem;
+}
 
 /* Responsive */
+@media (max-width: 576px) {
+    .foto {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    .logo {
+        width: 80px !important;
+    }
+    .name {
+        font-size: 1.2rem;
+    }
+    .bio {
+        font-size: 0.8rem !important;
+    }
+    .link {
+        font-size: 1rem !important;
+    }
+    .gmail, .whats img {
+        width: 30px;
+    }
+    .whatsapp {
+        width: 50% !important;
+        margin: 0px auto !important;
+    }
+}
 @media (max-width: 768px) {
     .name {
         font-size: 1.5rem;
@@ -209,5 +237,12 @@ header {
     }
     .link {
         font-size: 1rem !important;
+    }
+    .whatsapp {
+        width: 50% !important;
+        margin: 0px auto !important;
+    }
+    .gmail, .whats img {
+        width: 30px !important;
     }
 }
